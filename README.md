@@ -14,9 +14,9 @@ March 2017: share Photoshopped mockups and discuss next steps/tasks for the orga
 ![Tour of the Previous Website Design](https://github.com/jessiewuwu/cc_younglions/blob/master/assets/before_screencapture.gif "What the old website looked like")
 
 ## before versus after screenshots
+homepage:
 ![Homepage: Before](https://github.com/jessiewuwu/cc_younglions/blob/master/assets/img/before_homepage.png)
 about:
-## before versus after screenshots
 ![Homepage: About](https://github.com/jessiewuwu/cc_younglions/blob/master/assets/img/before_aboutus.png)
 history:
 ![Homepage: History](https://github.com/jessiewuwu/cc_younglions/blob/master/assets/img/before_history.png)
