@@ -16,12 +16,16 @@ March 2017: share Photoshopped mockups and discuss next steps/tasks for the orga
 ## before versus after screenshots
 homepage:
 ![Homepage: Before](https://github.com/jessiewuwu/cc_younglions/blob/master/assets/img/before_homepage.png)
+
 about:
 ![Homepage: About](https://github.com/jessiewuwu/cc_younglions/blob/master/assets/img/before_aboutus.png)
+
 history:
 ![Homepage: History](https://github.com/jessiewuwu/cc_younglions/blob/master/assets/img/before_history.png)
+
 gallery:
 ![Homepage: Gallery](https://github.com/jessiewuwu/cc_younglions/blob/master/assets/img/before_gallery.png)
+
 contact:
 ![Homepage: Before](https://github.com/jessiewuwu/cc_younglions/blob/master/assets/img/before_contact.png)
 
