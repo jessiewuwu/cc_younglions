@@ -1,20 +1,35 @@
-$header-font: 'Playfair-Bold';
+$accent-font: 'Playfair Display';
 $header-size: 1.5em;
-$title-font: 'Playfair';
 $title-size: 1.25em;
 $default-font: 'Muli';
 
-@font-face {
-  font-family: 'Playfair';
-  src: url('../assets/fonts/PlayfairDisplay-Regular.ttf');
+@import url('https://fonts.googleapis.com/css?family=Muli:r,b|Playfair+Display:r,b');
+
+.header-text {
+  font-family: $accent-font;
+  font-size: $header-size;
+  font-weight: bolder;
 }
 
-@font-face {
-  font-family: 'Playfair-Bold';
-  src: url('../assets/fonts/PlayfairDisplay-Bold.ttf');
+.title-text {
+  font-family: $accent-font;
+  font-size: $title-size;
 }
 
-@font-face {
-  font-family: 'Muli';
-  src: url('../assets/fonts/Muli-Regular.ttf');
+p {
+  font-family: $default-font;
+}
+
+nav {
+  .nav-wrapper li {
+    font-family: $accent-font;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 10%;
+    text-align: center;
+    font-size: $title-size;
+  }
+
+  .dropdown-content {
+  }
 }
