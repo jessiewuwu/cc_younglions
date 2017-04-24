@@ -6,8 +6,9 @@ This is a passion project I picked up after seeing the group perform in 2017 Lun
 I am excited to show my vision of the love, community, and modern day sense of style that they carry into this new website design.
 
 ## process
-February 2017: brainstorming and getting to know the group
-March 2017: share Photoshopped mockups and discuss next steps/tasks for the organizers (new updated text, high-quality images)
+**February 2017**: brainstorming and getting to know the group
+
+**March 2017**: share Photoshopped mockups and discuss next steps/tasks for the organizers (new updated text, high-quality images)
 
 
 ## before screencapture
