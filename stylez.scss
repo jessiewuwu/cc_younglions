@@ -2,6 +2,9 @@ $accent-font: 'Playfair Display';
 $header-size: 1.5em;
 $title-size: 1.25em;
 $default-font: 'Muli';
+$primary-color: #3a3a3a;
+$accent-color: gold;
+$nav-height: 50px;
 
 @import url('https://fonts.googleapis.com/css?family=Muli:r,b|Playfair+Display:r,b');
 
@@ -20,16 +23,96 @@ p {
   font-family: $default-font;
 }
 
+a, 
+nav ul a {
+  color: $primary-color;
+  font-family: $accent-font;
+  &:hover {
+    background-color: white;
+    color: $accent-color;
+    transition: all 0.3s ease;
+  }
+}
+
+nav li:hover {
+  background-color: white;
+}
+
 nav {
-  .nav-wrapper li {
-    font-family: $accent-font;
+  background-color: white;
+  box-shadow: none;
+  width: 90%;
+  margin: 0 5%;
+  // height: $nav-height;
+
+  ul a {
+    padding: 0;
+    margin-right: 5px;
+  }
+
+  .nav-wrapper .left,
+  .nav-wrapper .right {
     text-transform: uppercase;
     letter-spacing: 2px;
     width: 10%;
-    text-align: center;
     font-size: $title-size;
   }
 
-  .dropdown-content {
+  .brand-logo {
+    img {
+      width: 75px;
+      margin-top: 11px;
+    }
+  }
+
+  .dropdown-menu {
+    display: none;
+    li {
+      margin-right: 10px;
+    }
+  }
+
+  .dropdown-link:hover {
+     .dropdown-menu {
+      background-color: #fff;
+      margin: 0;
+      display: block !important;
+      min-width: 100px;
+      max-height: 650px;
+      overflow-y: auto;
+      position: absolute;
+      z-index: 999;
+      will-change: width, height;
+    }
+  }
+}
+
+.hamburger-icon {
+  display: none;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+#mobile-dropdown {
+  display: none;
+  li {
+    float: none;
+    a {
+      text-transform: uppercase;
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .hamburger-icon {
+    display: inline;
+    color: $primary-color;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  nav {
+    height: $nav-height;
   }
 }
