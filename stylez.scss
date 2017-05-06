@@ -6,12 +6,13 @@ $primary-color: #3a3a3a;
 $accent-color: gold;
 $nav-height: 50px;
 $letter-spacing: 3px;
-$margin-section: 5%;
+$margin-section: 10%;
 
 @import url('https://fonts.googleapis.com/css?family=Muli:r,b|Playfair+Display:r,b');
 
 html {
   font-family: $default-font;
+  font-size: 17px;
 }
 
 .header-text {
@@ -49,6 +50,12 @@ nav ul a {
   width: 100%;
   height: 13em;
   color: white;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   h1 {
     margin: 0 auto;
   }
@@ -157,6 +164,16 @@ nav {
       rgba(14,12,12,0.7), 
       rgba(14,12,12,0.7)),
       url('./assets/img/banner_pink_lion.jpg') no-repeat center;
+  }
+}
+
+.mission {
+  .banner-full-width {
+    background: linear-gradient(
+      rgba(14,12,12,0.7), 
+      rgba(14,12,12,0.7)),
+      url('./assets/img/banner_three_standing.jpg') no-repeat center;
+    background-size: cover;  
   }
 }
 .card {

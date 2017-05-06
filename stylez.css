@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Muli:r,b|Playfair+Display:r,b");
 html {
-  font-family: "Muli"; }
+  font-family: "Muli";
+  font-size: 17px; }
 
 .header-text {
   font-family: "Playfair Display";
@@ -31,12 +32,18 @@ nav ul a {
 .banner-full-width {
   width: 100%;
   height: 13em;
-  color: white; }
+  color: white;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
   .banner-full-width h1 {
     margin: 0 auto; }
 
 .contained {
-  margin: 5%; }
+  margin: 10%; }
 
 nav li:hover {
   background-color: white; }
@@ -94,7 +101,7 @@ nav {
   font-size: 4vw;
   text-align: center;
   letter-spacing: 3px;
-  padding: 0 5%; }
+  padding: 0 10%; }
 .hero img {
   width: 100%; }
 
@@ -103,6 +110,10 @@ nav {
 
 .featured .banner-full-width {
   background: linear-gradient(rgba(14, 12, 12, 0.7), rgba(14, 12, 12, 0.7)), url("./assets/img/banner_pink_lion.jpg") no-repeat center; }
+
+.mission .banner-full-width {
+  background: linear-gradient(rgba(14, 12, 12, 0.7), rgba(14, 12, 12, 0.7)), url("./assets/img/banner_three_standing.jpg") no-repeat center;
+  background-size: cover; }
 
 .card .card-title {
   height: 65px; }
