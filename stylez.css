@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Muli:r,b|Playfair+Display:r,b");
+html {
+  font-family: "Muli"; }
+
 .header-text {
   font-family: "Playfair Display";
   font-size: 1.5em;
@@ -11,6 +14,10 @@
 p {
   font-family: "Muli"; }
 
+h1 {
+  font-family: "Playfair Display";
+  letter-spacing: 3px; }
+
 a,
 nav ul a {
   color: #3a3a3a;
@@ -21,21 +28,30 @@ nav ul a {
     color: gold;
     transition: all 0.3s ease; }
 
+.banner-full-width {
+  width: 100%;
+  height: 13em;
+  color: white; }
+  .banner-full-width h1 {
+    margin: 0 auto; }
+
+.contained {
+  margin: 5%; }
+
 nav li:hover {
   background-color: white; }
 
 nav {
   background-color: white;
   box-shadow: none;
-  width: 90%;
-  margin: 0 5%; }
+  padding: 0 5%; }
   nav ul a {
     padding: 0;
     margin-right: 5px; }
   nav .nav-wrapper .left,
   nav .nav-wrapper .right {
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    text-transform: lowercase;
+    letter-spacing: 3px;
     width: 10%;
     font-size: 1.25em; }
   nav .brand-logo img {
@@ -72,8 +88,25 @@ nav {
   .hamburger-icon {
     display: inline;
     color: #3a3a3a; } }
-@media only screen and (min-width: 601px) {
-  nav {
-    height: 50px; } }
+.hero h1 {
+  text-transform: uppercase;
+  font-family: "Playfair Display";
+  font-size: 4vw;
+  text-align: center;
+  letter-spacing: 3px;
+  padding: 0 5%; }
+.hero img {
+  width: 100%; }
+
+.intro {
+  font-size: 1.25em; }
+
+.featured .banner-full-width {
+  background: linear-gradient(rgba(14, 12, 12, 0.7), rgba(14, 12, 12, 0.7)), url("./assets/img/banner_pink_lion.jpg") no-repeat center; }
+
+.card .card-title {
+  height: 65px; }
+.card .card-image iframe {
+  width: 100%; }
 
 /*# sourceMappingURL=stylez.css.map */

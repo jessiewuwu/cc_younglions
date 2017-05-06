@@ -5,8 +5,14 @@ $default-font: 'Muli';
 $primary-color: #3a3a3a;
 $accent-color: gold;
 $nav-height: 50px;
+$letter-spacing: 3px;
+$margin-section: 5%;
 
 @import url('https://fonts.googleapis.com/css?family=Muli:r,b|Playfair+Display:r,b');
+
+html {
+  font-family: $default-font;
+}
 
 .header-text {
   font-family: $accent-font;
@@ -23,6 +29,11 @@ p {
   font-family: $default-font;
 }
 
+h1 {
+  font-family: $accent-font;
+  letter-spacing: $letter-spacing;
+}
+
 a, 
 nav ul a {
   color: $primary-color;
@@ -34,6 +45,19 @@ nav ul a {
   }
 }
 
+.banner-full-width {
+  width: 100%;
+  height: 13em;
+  color: white;
+  h1 {
+    margin: 0 auto;
+  }
+}
+
+.contained {
+  margin: $margin-section;
+}
+
 nav li:hover {
   background-color: white;
 }
@@ -41,9 +65,7 @@ nav li:hover {
 nav {
   background-color: white;
   box-shadow: none;
-  width: 90%;
-  margin: 0 5%;
-  // height: $nav-height;
+  padding: 0 5%;
 
   ul a {
     padding: 0;
@@ -52,8 +74,8 @@ nav {
 
   .nav-wrapper .left,
   .nav-wrapper .right {
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    text-transform: lowercase;
+    letter-spacing: $letter-spacing;
     width: 10%;
     font-size: $title-size;
   }
@@ -73,18 +95,18 @@ nav {
   }
 
   .dropdown-link:hover {
-     .dropdown-menu {
-      background-color: #fff;
-      margin: 0;
-      display: block !important;
-      min-width: 100px;
-      max-height: 650px;
-      overflow-y: auto;
-      position: absolute;
-      z-index: 999;
-      will-change: width, height;
-    }
+   .dropdown-menu {
+    background-color: #fff;
+    margin: 0;
+    display: block !important;
+    min-width: 100px;
+    max-height: 650px;
+    overflow-y: auto;
+    position: absolute;
+    z-index: 999;
+    will-change: width, height;
   }
+}
 }
 
 .hamburger-icon {
@@ -111,8 +133,40 @@ nav {
   }
 }
 
-@media only screen and (min-width: 601px) {
-  nav {
-    height: $nav-height;
+.hero {
+  h1 {
+    text-transform: uppercase;
+    font-family: $accent-font;
+    font-size: 4vw;
+    text-align: center;
+    letter-spacing: $letter-spacing;
+    padding: 0 $margin-section;
+  }
+  img {
+    width: 100%;
+  }
+}
+
+.intro {
+  font-size: $title-size;
+}
+
+.featured {
+  .banner-full-width {
+    background: linear-gradient(
+      rgba(14,12,12,0.7), 
+      rgba(14,12,12,0.7)),
+      url('./assets/img/banner_pink_lion.jpg') no-repeat center;
+  }
+}
+.card {
+  .card-title {
+    height: 65px;
+  }
+
+  .card-image {
+    iframe {
+      width: 100%;
+    }
   }
 }
