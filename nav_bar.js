@@ -3,19 +3,19 @@ document.write('\
   <div class="navbar-fixed">\
   <nav>\
     <div class="nav-wrapper">\
-      <a class="brand-logo center">\
+      <a href="index.html" class="brand-logo center">\
         <img src="./assets/img/logo.png" alt="Logo">\
       </a>\
       <ul class="hide-on-med-and-down">\
-        <li class="left"><a href="/">Home</a></li>\
+        <li class="left"><a href="index.html">Home</a></li>\
         <li class="left dropdown-link">\
-          <a href="/about" >\
+          <a href="about.html" >\
             About\
           </a>\
           <ul class="dropdown-menu">\
-            <li><a href="#!">About Us</a></li>\
-            <li><a href="#!">Programs</a></li>\
-            <li><a href="#!">Community Service</a></li>\
+            <li><a href="about.html#about-us-content">About Us</a></li>\
+            <li><a href="about.html#programs">Programs</a></li>\
+            <li><a href="about.html#community-service">Community Service</a></li>\
           </ul>\
         </li>\
         <li class="left"><a href="/history">History</a></li>\
@@ -32,9 +32,9 @@ document.write('\
       </ul>\
       <i class="material-icons hamburger-icon">menu</i>\
       <ul id="mobile-dropdown">\
-          <li><a href="#!">About Us</a></li>\
-          <li><a href="#!">Programs</a></li>\
-          <li><a href="#!">Community Service</a></li>\
+          <li><a href="about.html#about-us-content">About Us</a></li>\
+          <li><a href="about.html#programs">Programs</a></li>\
+          <li><a href="about.html#community-service">Community Service</a></li>\
           <li><a href="#!">Photos</a></li>\
           <li><a href="#!">Videos</a></li>\
           <li><a href="#!">Press</a></li>\
