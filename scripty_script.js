@@ -3,5 +3,5 @@ $(document).ready(function() {
   $('.button-collapse').sideNav();
   $('.hamburger-icon').click(() => {
     $('#mobile-dropdown').toggle();
-  })
+  });
 });
