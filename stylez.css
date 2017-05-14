@@ -45,14 +45,14 @@ nav ul a {
 .contained {
   margin: 5% 10%; }
 
-.image-content-layout .image-column figure {
-  margin-bottom: 10%; }
-.image-content-layout .image-column figcaption {
-  font-style: italic; }
-.image-content-layout .image-column img {
-  width: 100%; }
-.image-content-layout .content-column {
-  margin-top: -38px; }
+.image-content-layout .image-column {
+  padding: 15px 15px 0 0; }
+  .image-content-layout .image-column figure {
+    margin: 0 0 10% 0; }
+  .image-content-layout .image-column figcaption {
+    font-style: italic; }
+  .image-content-layout .image-column img {
+    width: 100%; }
 
 .scroll-to:before {
   content: '';
@@ -146,5 +146,13 @@ nav {
   background-size: cover; }
 .community h2 {
   text-transform: lowercase; }
+.community .content-column {
+  margin-top: -38px; }
+
+.history .banner-full-width {
+  background: linear-gradient(rgba(14, 12, 12, 0.7), rgba(14, 12, 12, 0.7)), url("./assets/img/banner_three_standing.jpg") no-repeat center;
+  background-size: cover; }
+.history p:first-child {
+  margin-top: 10px; }
 
 /*# sourceMappingURL=stylez.css.map */

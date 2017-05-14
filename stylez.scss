@@ -67,8 +67,9 @@ nav ul a {
 
 .image-content-layout {
   .image-column {
+    padding: 15px 15px 0 0;
     figure {
-      margin-bottom: $margin-section;
+      margin: 0 0 $margin-section 0;
     }
     figcaption {
       font-style: italic;
@@ -76,9 +77,6 @@ nav ul a {
     img {
       width: 100%;
     }
-  }
-  .content-column {
-    margin-top: -38px;
   }
 }
 
@@ -90,12 +88,6 @@ nav ul a {
   height: 5.5em;
   margin-top: -5.5em;
 }
-
-// .scroll-to {
-//   display: block;
-//   position: relative;
-//   top: 130px;
-// }
 
 nav li:hover {
   background-color: white;
@@ -212,7 +204,6 @@ nav {
   .card-title {
     height: 65px;
   }
-
   .card-image {
     iframe {
       width: 100%;
@@ -238,8 +229,24 @@ nav {
       url('./assets/img/banner_three_standing.jpg') no-repeat center;
     background-size: cover;
   }
-
   h2 {
     text-transform: lowercase;
+  }
+
+  .content-column {
+    margin-top: -38px;
+  }
+}
+
+.history {
+  .banner-full-width {
+    background: linear-gradient(
+      rgba(14,12,12,0.7), 
+      rgba(14,12,12,0.7)),
+      url('./assets/img/banner_three_standing.jpg') no-repeat center;
+    background-size: cover;
+  }
+  p:first-child {
+    margin-top: 10px;
   }
 }

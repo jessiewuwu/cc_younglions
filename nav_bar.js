@@ -18,7 +18,7 @@ document.write('\
             <li><a href="about.html#community-service">Community Service</a></li>\
           </ul>\
         </li>\
-        <li class="left"><a href="/history">History</a></li>\
+        <li class="left"><a href="history.html">History</a></li>\
         <li class="right"><a href="/contact">Contact</a></li>\
         <li class="right"><a href="/support">Support</a></li>\
         <li class="right dropdown-link">\
@@ -38,7 +38,7 @@ document.write('\
           <li><a href="#!">Photos</a></li>\
           <li><a href="#!">Videos</a></li>\
           <li><a href="#!">Press</a></li>\
-          <li><a href="/history">History</a></li>\
+          <li><a href="history.html">History</a></li>\
           <li><a href="/contact">Contact</a></li>\
           <li><a href="/support">Support</a></li>\
       </ul>\
