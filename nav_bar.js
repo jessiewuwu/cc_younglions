@@ -22,9 +22,9 @@ document.write('\
         <li class="right"><a href="/contact">Contact</a></li>\
         <li class="right"><a href="/support">Support</a></li>\
         <li class="right dropdown-link">\
-          <a href="/gallery">Gallery</a>\
+          <a href="gallery/index.html">Gallery</a>\
           <ul class="dropdown-menu">\
-            <li><a href="#!">Photos</a></li>\
+            <li><a href="gallery/photos.html">Photos</a></li>\
             <li><a href="#!">Videos</a></li>\
             <li><a href="#!">Press</a></li>\
           </ul>\
