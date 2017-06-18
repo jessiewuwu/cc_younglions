@@ -155,4 +155,12 @@ nav {
 .history p:first-child {
   margin-top: 10px; }
 
+.gallery.--photo .contained figure {
+  vertical-align: top;
+  display: inline-block; }
+.gallery.--photo .contained figcaption {
+  display: block; }
+.gallery.--photo .contained img {
+  width: 100%; }
+
 /*# sourceMappingURL=stylez.css.map */

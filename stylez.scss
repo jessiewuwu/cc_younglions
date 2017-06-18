@@ -250,3 +250,18 @@ nav {
     margin-top: 10px;
   }
 }
+
+.gallery.--photo {
+  .contained {
+    figure {
+         vertical-align: top;
+         display: inline-block;
+    }
+    figcaption {
+      display: block;
+    }
+    img {
+      width: 100%;
+    }
+  }
+}
