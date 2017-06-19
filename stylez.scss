@@ -65,6 +65,10 @@ nav ul a {
   margin: 5% $margin-section;
 }
 
+.wide-container {
+  margin: 5%;
+}
+
 .image-content-layout {
   .image-column {
     padding: 15px 15px 0 0;
@@ -252,10 +256,11 @@ nav {
 }
 
 .gallery.--photo {
-  .contained {
+  .wide-container {
     figure {
          vertical-align: top;
          display: inline-block;
+         margin-right: 0;
     }
     figcaption {
       display: block;

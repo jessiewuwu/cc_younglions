@@ -45,6 +45,9 @@ nav ul a {
 .contained {
   margin: 5% 10%; }
 
+.wide-container {
+  margin: 5%; }
+
 .image-content-layout .image-column {
   padding: 15px 15px 0 0; }
   .image-content-layout .image-column figure {
@@ -155,12 +158,13 @@ nav {
 .history p:first-child {
   margin-top: 10px; }
 
-.gallery.--photo .contained figure {
+.gallery.--photo .wide-container figure {
   vertical-align: top;
-  display: inline-block; }
-.gallery.--photo .contained figcaption {
+  display: inline-block;
+  margin-right: 0; }
+.gallery.--photo .wide-container figcaption {
   display: block; }
-.gallery.--photo .contained img {
+.gallery.--photo .wide-container img {
   width: 100%; }
 
 /*# sourceMappingURL=stylez.css.map */
