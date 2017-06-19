@@ -111,7 +111,9 @@ nav {
   .nav-wrapper .right {
     text-transform: lowercase;
     letter-spacing: $letter-spacing;
-    width: 10%;
+    // width: 10%;
+    width: 13%;
+    padding: 0 2%;
     font-size: $title-size;
   }
 
@@ -126,18 +128,18 @@ nav {
     display: none;
     li {
       margin-right: 10px;
+      line-height: 25px;
     }
   }
 
   .dropdown-link:hover {
    .dropdown-menu {
     background-color: #fff;
+    // outline: 3px solid red;
     margin: 0;
     display: block !important;
     min-width: 100px;
     max-height: 650px;
-    overflow-y: auto;
-    position: absolute;
     z-index: 999;
     will-change: width, height;
   }
@@ -153,8 +155,11 @@ nav {
 
 #mobile-dropdown {
   display: none;
+  background: white;
   li {
     float: none;
+    line-height: 45px;
+    margin-left: 5%;
     a {
       text-transform: uppercase;
     }
@@ -162,9 +167,13 @@ nav {
 }
 
 @media only screen and (max-width: 992px) {
-  .hamburger-icon {
-    display: inline;
-    color: $primary-color;
+  nav {
+    padding: 0;
+    .hamburger-icon {
+      display: inline;
+      color: $primary-color;
+      margin-left: 5%;
+    }
   }
 }
 

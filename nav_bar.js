@@ -9,9 +9,7 @@ document.write('\
       <ul class="hide-on-med-and-down">\
         <li class="left"><a href="index.html">Home</a></li>\
         <li class="left dropdown-link">\
-          <a href="about.html" >\
-            About\
-          </a>\
+          <a href="about.html" >\About</a>\
           <ul class="dropdown-menu">\
             <li><a href="about.html#about-us-content">About Us</a></li>\
             <li><a href="about.html#programs">Programs</a></li>\
