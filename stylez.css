@@ -62,56 +62,29 @@ nav ul a {
   height: 5.5em;
   margin-top: -5.5em; }
 
-nav li:hover {
-  background-color: white; }
+#sidenav-overlay {
+  background-color: transparent !important;
+  z-index: 0 !important; }
 
 nav {
   background-color: white;
   box-shadow: none;
   padding: 0 5%; }
-  nav ul a {
-    padding: 0;
-    margin-right: 5px; }
-  nav .nav-wrapper .left,
-  nav .nav-wrapper .right {
+  nav li:hover {
+    background-color: white; }
+  nav .nav-wrapper {
     text-transform: lowercase;
     letter-spacing: 3px;
-    width: 10%;
     font-size: 1.25em; }
+  nav .regular-nav li {
+    width: 8rem;
+    text-align: center; }
+  nav .button-collapse .material-icons {
+    color: #3a3a3a; }
   nav .brand-logo img {
     width: 75px;
     margin-top: 11px; }
-  nav .dropdown-menu {
-    display: none; }
-    nav .dropdown-menu li {
-      margin-right: 10px; }
-  nav .dropdown-link:hover .dropdown-menu {
-    background-color: #fff;
-    margin: 0;
-    display: block !important;
-    min-width: 100px;
-    max-height: 650px;
-    overflow-y: auto;
-    position: absolute;
-    z-index: 999;
-    will-change: width, height; }
 
-.hamburger-icon {
-  display: none; }
-  .hamburger-icon:hover {
-    cursor: pointer; }
-
-#mobile-dropdown {
-  display: none; }
-  #mobile-dropdown li {
-    float: none; }
-    #mobile-dropdown li a {
-      text-transform: uppercase; }
-
-@media only screen and (max-width: 992px) {
-  .hamburger-icon {
-    display: inline;
-    color: #3a3a3a; } }
 .hero h1 {
   text-transform: uppercase;
   font-family: "Playfair Display";
