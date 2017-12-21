@@ -70,7 +70,10 @@ nav {
   background-color: white;
   box-shadow: none;
   padding: 0 5%; }
-  nav li:hover {
+  nav a {
+    text-transform: lowercase; }
+  nav li:hover,
+  nav .side-nav li > a:hover {
     background-color: white; }
   nav .nav-wrapper {
     text-transform: lowercase;
@@ -88,7 +91,7 @@ nav {
 .hero h1 {
   text-transform: uppercase;
   font-family: "Playfair Display";
-  font-size: 4vw;
+  font-size: 3vw;
   text-align: center;
   letter-spacing: 3px;
   padding: 0 10%; }

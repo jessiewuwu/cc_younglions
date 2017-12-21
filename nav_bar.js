@@ -3,14 +3,14 @@ document.write('\
   <div class="navbar-fixed">\
       <!-- Dropdown Structure -->\
       <ul id="about-dropdown" class="dropdown-content">\
-        <li><a href="#!">about us</a></li>\
-        <li><a href="#!">programs</a></li>\
-        <li><a href="#!">community service</a></li>\
+        <li><a href="about.html#about-us-content">About Us</a></li>\
+        <li><a href="about.html#programs">Programs</a></li>\
+        <li><a href="about.html#community-service">Community Service</a></li>\
       </ul>\
       <ul id="gallery-dropdown" class="dropdown-content">\
-        <li><a href="#!">photos</a></li>\
-        <li><a href="#!">videos</a></li>\
-        <li><a href="#!">press</a></li>\
+        <li><a href="gallery/photos.html">Photos</a></li>\
+        <li><a href="gallery/videos.html">Videos</a></li>\
+        <li><a href="gallery/press.html">Press</a></li>\
       </ul>\
       <nav>\
          <div class="nav-wrapper">\
@@ -34,9 +34,9 @@ document.write('\
                  <li><a href="about.html#about-us-content">About Us</a></li>\
                  <li><a href="about.html#programs">Programs</a></li>\
                  <li><a href="about.html#community-service">Community Service</a></li>\
-                 <li><a href="photos.html">Photos</a></li>\
-                 <li><a href="videos.html">Videos</a></li>\
-                 <li><a href="press.html">Press</a></li>\
+                 <li><a href="gallery/photos.html">Photos</a></li>\
+                 <li><a href="gallery/videos.html">Videos</a></li>\
+                 <li><a href="gallery/press.html">Press</a></li>\
                  <li><a href="history.html">History</a></li>\
                  <li><a href="contact.html">Contact</a></li>\
                  <li><a href="support.html">Support</a></li>\

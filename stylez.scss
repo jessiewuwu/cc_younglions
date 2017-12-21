@@ -100,7 +100,12 @@ nav {
   box-shadow: none;
   padding: 0 5%;
 
-  li:hover {
+  a {
+    text-transform: lowercase;
+  }
+
+  li:hover,
+  .side-nav li>a:hover {
     background-color: white;
   }
 
@@ -131,7 +136,7 @@ nav {
   h1 {
     text-transform: uppercase;
     font-family: $accent-font;
-    font-size: 4vw;
+    font-size: 3vw;
     text-align: center;
     letter-spacing: $letter-spacing;
     padding: 0 $margin-section;
