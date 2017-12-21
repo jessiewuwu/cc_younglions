@@ -6,6 +6,6 @@ $(document).ready(function() {
   });
 
   // vanillabox gallery plugin
-  $('selector-for-image-elements').vanillabox();
-  $('.image-list a').vanillabox();
+  $('.gallery figure img').vanillabox();
+  // $('.image-list a').vanillabox();
 });
