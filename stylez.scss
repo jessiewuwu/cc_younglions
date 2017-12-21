@@ -36,9 +36,12 @@ h1 {
 }
 
 a, 
-nav ul a {
+nav ul a,
+.side-nav li>a,
+.dropdown-content li>a {
   color: $primary-color;
   font-family: $accent-font;
+  font-size: 0.75rem;
   &:hover {
     background-color: white;
     color: $accent-color;
@@ -62,7 +65,7 @@ nav ul a {
 }
 
 .contained {
-  margin: 5% $margin-section;
+  margin: 2% $margin-section;
 }
 
 .image-content-layout {
@@ -127,7 +130,7 @@ nav {
   .brand-logo {
     img {
       width: 75px;
-      margin-top: 11px;
+      margin-top: 4px;
     }
   }
 }
@@ -136,10 +139,12 @@ nav {
   h1 {
     text-transform: uppercase;
     font-family: $accent-font;
-    font-size: 3vw;
+    font-size: 2vw;
     text-align: center;
-    letter-spacing: $letter-spacing;
-    padding: 0 $margin-section;
+    letter-spacing: 5px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 1rem;
   }
   img {
     width: 100%;
@@ -232,4 +237,16 @@ nav {
       width: 100%;
     }
   }
+}
+
+@media only screen and (min-width: 601px) {
+  nav,
+  nav .nav-wrapper i,
+  nav a.button-collapse,
+  nav a.button-collapse i,
+  .navbar-fixed {
+    height: 50px;
+    line-height: 50px;
+  }
+
 }
