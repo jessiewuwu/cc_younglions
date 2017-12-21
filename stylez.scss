@@ -7,6 +7,7 @@ $accent-color: gold;
 $nav-height: 50px;
 $letter-spacing: 3px;
 $margin-section: 10%;
+$default-font-size: 16px;
 
 @import url('https://fonts.googleapis.com/css?family=Muli:r,b|Playfair+Display:r,b');
 
@@ -28,6 +29,7 @@ html {
 
 p {
   font-family: $default-font;
+  font-size: $default-font-size;
 }
 
 h1 {
@@ -51,7 +53,7 @@ nav ul a,
 
 .banner-full-width {
   width: 100%;
-  height: 13em;
+  height: 10em;
   color: white;
   display: -webkit-flex;
   display: -ms-flexbox;
