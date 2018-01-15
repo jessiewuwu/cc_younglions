@@ -5,5 +5,7 @@ $(document).ready(function() {
     $('#mobile-dropdown').toggle();
   });
 
-  $('.photo-lightbox').vanillabox();
+  // vanillabox gallery plugin
+  $('.gallery figure img').vanillabox();
+  // $('.image-list a').vanillabox();
 });

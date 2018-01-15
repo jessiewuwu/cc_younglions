@@ -7,6 +7,7 @@ $accent-color: gold;
 $nav-height: 50px;
 $letter-spacing: 3px;
 $margin-section: 10%;
+$default-font-size: 16px;
 
 @import url('https://fonts.googleapis.com/css?family=Muli:r,b|Playfair+Display:r,b');
 
@@ -28,6 +29,7 @@ html {
 
 p {
   font-family: $default-font;
+  font-size: $default-font-size;
 }
 
 h1 {
@@ -35,10 +37,13 @@ h1 {
   letter-spacing: $letter-spacing;
 }
 
-a, 
-nav ul a {
+a,
+nav ul a,
+.side-nav li>a,
+.dropdown-content li>a {
   color: $primary-color;
   font-family: $accent-font;
+  font-size: 0.75rem;
   &:hover {
     background-color: white;
     color: $accent-color;
@@ -48,7 +53,7 @@ nav ul a {
 
 .banner-full-width {
   width: 100%;
-  height: 13em;
+  height: 10em;
   color: white;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -62,11 +67,7 @@ nav ul a {
 }
 
 .contained {
-  margin: 5% $margin-section;
-}
-
-.wide-container {
-  margin: 5%;
+  margin: 2% $margin-section;
 }
 
 .image-content-layout {
@@ -93,8 +94,10 @@ nav ul a {
   margin-top: -5.5em;
 }
 
-nav li:hover {
-  background-color: white;
+
+#sidenav-overlay {
+    background-color: transparent !important;
+    z-index: 0 !important;
 }
 
 nav {
@@ -102,77 +105,34 @@ nav {
   box-shadow: none;
   padding: 0 5%;
 
-  ul a {
-    padding: 0;
-    margin-right: 5px;
+  a {
+    text-transform: lowercase;
   }
 
-  .nav-wrapper .left,
-  .nav-wrapper .right {
+  li:hover,
+  .side-nav li>a:hover {
+    background-color: white;
+  }
+
+  .nav-wrapper {
     text-transform: lowercase;
     letter-spacing: $letter-spacing;
-    // width: 10%;
-    width: 13%;
-    padding: 0 2%;
     font-size: $title-size;
+  }
+
+  .regular-nav li {
+      width: 8.5rem;
+      text-align: center;
+  }
+
+  .button-collapse .material-icons {
+      color: $primary-color;
   }
 
   .brand-logo {
     img {
       width: 75px;
-      margin-top: 11px;
-    }
-  }
-
-  .dropdown-menu {
-    display: none;
-    li {
-      margin-right: 10px;
-      line-height: 25px;
-    }
-  }
-
-  .dropdown-link:hover {
-   .dropdown-menu {
-    background-color: #fff;
-    // outline: 3px solid red;
-    margin: 0;
-    display: block !important;
-    min-width: 100px;
-    max-height: 650px;
-    z-index: 999;
-    will-change: width, height;
-  }
-}
-}
-
-.hamburger-icon {
-  display: none;
-  &:hover {
-    cursor: pointer;
-  }
-}
-
-#mobile-dropdown {
-  display: none;
-  background: white;
-  li {
-    float: none;
-    line-height: 45px;
-    margin-left: 5%;
-    a {
-      text-transform: uppercase;
-    }
-  }
-}
-
-@media only screen and (max-width: 992px) {
-  nav {
-    padding: 0;
-    .hamburger-icon {
-      display: inline;
-      color: $primary-color;
-      margin-left: 5%;
+      margin-top: 4px;
     }
   }
 }
@@ -181,10 +141,12 @@ nav {
   h1 {
     text-transform: uppercase;
     font-family: $accent-font;
-    font-size: 4vw;
+    font-size: 2vw;
     text-align: center;
-    letter-spacing: $letter-spacing;
-    padding: 0 $margin-section;
+    letter-spacing: 5px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 1rem;
   }
   img {
     width: 100%;
@@ -198,7 +160,7 @@ nav {
 .featured {
   .banner-full-width {
     background: linear-gradient(
-      rgba(14,12,12,0.7), 
+      rgba(14,12,12,0.7),
       rgba(14,12,12,0.7)),
       url('./assets/img/banner_pink_lion.jpg') no-repeat center;
   }
@@ -207,10 +169,10 @@ nav {
 .mission {
   .banner-full-width {
     background: linear-gradient(
-      rgba(14,12,12,0.7), 
+      rgba(14,12,12,0.7),
       rgba(14,12,12,0.7)),
       url('./assets/img/banner_three_standing.jpg') no-repeat center;
-    background-size: cover;  
+    background-size: cover;
   }
 }
 .card {
@@ -227,7 +189,7 @@ nav {
 .about-us {
   .banner-full-width {
     background: linear-gradient(
-      rgba(14,12,12,0.7), 
+      rgba(14,12,12,0.7),
       rgba(14,12,12,0.7)),
       url('./assets/img/banner_three_standing.jpg') no-repeat center;
     background-size: cover;
@@ -237,7 +199,7 @@ nav {
 .community {
   .banner-full-width {
     background: linear-gradient(
-      rgba(14,12,12,0.7), 
+      rgba(14,12,12,0.7),
       rgba(14,12,12,0.7)),
       url('./assets/img/banner_three_standing.jpg') no-repeat center;
     background-size: cover;
@@ -254,7 +216,7 @@ nav {
 .history {
   .banner-full-width {
     background: linear-gradient(
-      rgba(14,12,12,0.7), 
+      rgba(14,12,12,0.7),
       rgba(14,12,12,0.7)),
       url('./assets/img/banner_three_standing.jpg') no-repeat center;
     background-size: cover;
@@ -265,11 +227,10 @@ nav {
 }
 
 .gallery.--photo {
-  .wide-container {
+  .contained {
     figure {
          vertical-align: top;
          display: inline-block;
-         margin-right: 0;
     }
     figcaption {
       display: block;
@@ -277,5 +238,16 @@ nav {
     img {
       width: 100%;
     }
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  nav,
+  nav .nav-wrapper i,
+  nav a.button-collapse,
+  nav a.button-collapse i,
+  .navbar-fixed {
+    height: 50px;
+    line-height: 50px;
   }
 }

@@ -13,25 +13,31 @@ html {
   font-size: 1.25em; }
 
 p {
-  font-family: "Muli"; }
+  font-family: "Muli";
+  font-size: 16px; }
 
 h1 {
   font-family: "Playfair Display";
   letter-spacing: 3px; }
 
 a,
-nav ul a {
+nav ul a,
+.side-nav li > a,
+.dropdown-content li > a {
   color: #3a3a3a;
-  font-family: "Playfair Display"; }
+  font-family: "Playfair Display";
+  font-size: 0.75rem; }
   a:hover,
-  nav ul a:hover {
+  nav ul a:hover,
+  .side-nav li > a:hover,
+  .dropdown-content li > a:hover {
     background-color: white;
     color: gold;
     transition: all 0.3s ease; }
 
 .banner-full-width {
   width: 100%;
-  height: 13em;
+  height: 10em;
   color: white;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -43,10 +49,7 @@ nav ul a {
     margin: 0 auto; }
 
 .contained {
-  margin: 5% 10%; }
-
-.wide-container {
-  margin: 5%; }
+  margin: 2% 10%; }
 
 .image-content-layout .image-column {
   padding: 15px 15px 0 0; }
@@ -65,69 +68,41 @@ nav ul a {
   height: 5.5em;
   margin-top: -5.5em; }
 
-nav li:hover {
-  background-color: white; }
+#sidenav-overlay {
+  background-color: transparent !important;
+  z-index: 0 !important; }
 
 nav {
   background-color: white;
   box-shadow: none;
   padding: 0 5%; }
-  nav ul a {
-    padding: 0;
-    margin-right: 5px; }
-  nav .nav-wrapper .left,
-  nav .nav-wrapper .right {
+  nav a {
+    text-transform: lowercase; }
+  nav li:hover,
+  nav .side-nav li > a:hover {
+    background-color: white; }
+  nav .nav-wrapper {
     text-transform: lowercase;
     letter-spacing: 3px;
-    width: 13%;
-    padding: 0 2%;
     font-size: 1.25em; }
+  nav .regular-nav li {
+    width: 8.5rem;
+    text-align: center; }
+  nav .button-collapse .material-icons {
+    color: #3a3a3a; }
   nav .brand-logo img {
     width: 75px;
-    margin-top: 11px; }
-  nav .dropdown-menu {
-    display: none; }
-    nav .dropdown-menu li {
-      margin-right: 10px;
-      line-height: 25px; }
-  nav .dropdown-link:hover .dropdown-menu {
-    background-color: #fff;
-    margin: 0;
-    display: block !important;
-    min-width: 100px;
-    max-height: 650px;
-    z-index: 999;
-    will-change: width, height; }
+    margin-top: 4px; }
 
-.hamburger-icon {
-  display: none; }
-  .hamburger-icon:hover {
-    cursor: pointer; }
-
-#mobile-dropdown {
-  display: none;
-  background: white; }
-  #mobile-dropdown li {
-    float: none;
-    line-height: 45px;
-    margin-left: 5%; }
-    #mobile-dropdown li a {
-      text-transform: uppercase; }
-
-@media only screen and (max-width: 992px) {
-  nav {
-    padding: 0; }
-    nav .hamburger-icon {
-      display: inline;
-      color: #3a3a3a;
-      margin-left: 5%; } }
 .hero h1 {
   text-transform: uppercase;
   font-family: "Playfair Display";
-  font-size: 4vw;
+  font-size: 2vw;
   text-align: center;
-  letter-spacing: 3px;
-  padding: 0 10%; }
+  letter-spacing: 5px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 1rem; }
 .hero img {
   width: 100%; }
 
@@ -164,13 +139,21 @@ nav {
 .history p:first-child {
   margin-top: 10px; }
 
-.gallery.--photo .wide-container figure {
+.gallery.--photo .contained figure {
   vertical-align: top;
-  display: inline-block;
-  margin-right: 0; }
-.gallery.--photo .wide-container figcaption {
+  display: inline-block; }
+.gallery.--photo .contained figcaption {
   display: block; }
-.gallery.--photo .wide-container img {
+.gallery.--photo .contained img {
   width: 100%; }
+
+@media only screen and (min-width: 601px) {
+  nav,
+  nav .nav-wrapper i,
+  nav a.button-collapse,
+  nav a.button-collapse i,
+  .navbar-fixed {
+    height: 50px;
+    line-height: 50px; } }
 
 /*# sourceMappingURL=stylez.css.map */
