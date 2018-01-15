@@ -4,8 +4,5 @@ $(document).ready(function() {
   $('.hamburger-icon').click(() => {
     $('#mobile-dropdown').toggle();
   });
-
-  // vanillabox gallery plugin
-  $('.gallery figure img').vanillabox();
-  // $('.image-list a').vanillabox();
+  $('.photo-lightbox').vanillabox();
 });
