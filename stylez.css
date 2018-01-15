@@ -147,6 +147,9 @@ nav {
 .gallery.--photo .contained img {
   width: 100%; }
 
+.gallery.--video iframe {
+  width: 100%; }
+
 .gallery h1 {
   text-align: center; }
 .gallery .gallery-item {

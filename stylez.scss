@@ -241,6 +241,12 @@ nav {
   }
 }
 
+.gallery.--video {
+  iframe {
+    width:100%;
+  }
+}
+
 .gallery {
   h1 {
     text-align: center;
