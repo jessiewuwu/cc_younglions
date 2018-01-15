@@ -147,6 +147,14 @@ nav {
 .gallery.--photo .contained img {
   width: 100%; }
 
+.gallery h1 {
+  text-align: center; }
+.gallery .gallery-item {
+  margin-right: auto; }
+
+.vnbx-button {
+  cursor: pointer; }
+
 @media only screen and (min-width: 601px) {
   nav,
   nav .nav-wrapper i,

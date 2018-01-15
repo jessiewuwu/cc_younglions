@@ -241,6 +241,20 @@ nav {
   }
 }
 
+.gallery {
+  h1 {
+    text-align: center;
+  }
+  .gallery-item {
+    margin-right: auto;
+  }
+}
+
+// overriding lightbox
+.vnbx-button {
+  cursor: pointer;
+}
+
 @media only screen and (min-width: 601px) {
   nav,
   nav .nav-wrapper i,
