@@ -11,6 +11,16 @@ $default-font-size: 16px;
 
 @import url('https://fonts.googleapis.com/css?family=Muli:r,b|Playfair+Display:r,b');
 
+// for sticky footer
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+main {
+  flex: 1 0 auto;
+}
+
 html {
   font-family: $default-font;
   font-size: 17px;
@@ -309,10 +319,19 @@ nav {
     }
 }
 
+footer {
+  padding-top: 0 !important;
+  background-color: $primary-color !important;
+  font-family: $default-font;
+  font-size: .75rem;
+  padding: 0 10%;
+}
+
 // overriding lightbox
 .vnbx-button {
   cursor: pointer;
 }
+
 
 @media only screen and (min-width: 601px) {
   nav,

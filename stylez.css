@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Muli:r,b|Playfair+Display:r,b");
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; }
+
+main {
+  flex: 1 0 auto; }
+
 html {
   font-family: "Muli";
   font-size: 17px; }
@@ -190,6 +198,13 @@ nav {
     color: gold; }
   .contact .btn {
     background-color: #3a3a3a; }
+
+footer {
+  padding-top: 0 !important;
+  background-color: #3a3a3a !important;
+  font-family: "Muli";
+  font-size: .75rem;
+  padding: 0 10%; }
 
 .vnbx-button {
   cursor: pointer; }
