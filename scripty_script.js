@@ -4,5 +4,11 @@ $(document).ready(function() {
     $('.hamburger-icon').click(() => {
         $('#mobile-dropdown').toggle();
     });
+
+    //for forms
+    $('select').material_select();
+
+    // for scrollable lightbox gallery
     $('.photo-lightbox').vanillabox();
+
 });

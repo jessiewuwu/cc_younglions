@@ -139,6 +139,10 @@ nav {
 .history p:first-child {
   margin-top: 10px; }
 
+.support .banner-full-width, .contact .banner-full-width {
+  background: linear-gradient(rgba(14, 12, 12, 0.7), rgba(14, 12, 12, 0.7)), url("./assets/img/banner_three_standing.jpg") no-repeat center;
+  background-size: cover; }
+
 .gallery.--photo .contained figure {
   vertical-align: top;
   display: inline-block; }
@@ -154,6 +158,38 @@ nav {
   text-align: center; }
 .gallery .gallery-item {
   margin-right: auto; }
+
+.contact {
+  /* label color */
+  /* label focus color */
+  /* label underline focus color */
+  /* valid color */
+  /* invalid color */
+  /* icon prefix focus color */ }
+  .contact textarea.materialize-textarea {
+    resize: auto;
+    min-height: 5rem !important; }
+  .contact .input-field label {
+    color: #3a3a3a; }
+  .contact .input-field input:focus + label,
+  .contact .input-field textarea:focus + label {
+    color: gold; }
+  .contact .dropdown-content li > span {
+    color: #3a3a3a; }
+  .contact .input-field input:focus,
+  .contact .input-field textarea:focus {
+    border-bottom: 1px solid gold;
+    box-shadow: 0 1px 0 0 gold; }
+  .contact .input-field input.valid {
+    border-bottom: 1px solid gold;
+    box-shadow: 0 1px 0 0 gold; }
+  .contact .input-field input.invalid {
+    border-bottom: 1px solid gold;
+    box-shadow: 0 1px 0 0 gold; }
+  .contact .input-field .prefix.active {
+    color: gold; }
+  .contact .btn {
+    background-color: #3a3a3a; }
 
 .vnbx-button {
   cursor: pointer; }

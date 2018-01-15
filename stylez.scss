@@ -226,6 +226,16 @@ nav {
   }
 }
 
+.support, .contact {
+  .banner-full-width {
+    background: linear-gradient(
+      rgba(14,12,12,0.7),
+      rgba(14,12,12,0.7)),
+      url('./assets/img/banner_three_standing.jpg') no-repeat center;
+    background-size: cover;
+  }
+}
+
 .gallery.--photo {
   .contained {
     figure {
@@ -254,6 +264,49 @@ nav {
   .gallery-item {
     margin-right: auto;
   }
+}
+
+.contact {
+  // form override
+  textarea.materialize-textarea {
+    resize: auto;
+    min-height: 5rem !important;
+  }
+  /* label color */
+     .input-field label {
+       color: $primary-color;
+     }
+     /* label focus color */
+     .input-field input:focus + label,
+     .input-field textarea:focus + label {
+       color: $accent-color;
+     }
+     .dropdown-content li>span {
+      color: $primary-color;
+     }
+     /* label underline focus color */
+     .input-field input:focus,
+     .input-field textarea:focus {
+       border-bottom: 1px solid $accent-color;
+       box-shadow: 0 1px 0 0 $accent-color;
+     }
+     /* valid color */
+     .input-field input.valid {
+       border-bottom: 1px solid $accent-color;
+       box-shadow: 0 1px 0 0 $accent-color;
+     }
+     /* invalid color */
+     .input-field input.invalid {
+       border-bottom: 1px solid $accent-color;
+       box-shadow: 0 1px 0 0 $accent-color;
+     }
+     /* icon prefix focus color */
+     .input-field .prefix.active {
+       color: $accent-color;
+     }
+    .btn {
+      background-color: $primary-color;
+    }
 }
 
 // overriding lightbox
