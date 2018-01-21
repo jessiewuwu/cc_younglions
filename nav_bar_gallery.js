@@ -10,14 +10,13 @@ document.write('\
       <ul id="gallery-dropdown" class="dropdown-content">\
         <li><a href="photos.html">photos</a></li>\
         <li><a href="videos.html">videos</a></li>\
-        <li><a href="press.html">press</a></li>\
       </ul>\
       <nav>\
          <div class="nav-wrapper">\
               <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>\
                <ul class="hide-on-med-and-down regular-nav">\
                  <li><a href="../index.html" class="brand-logo center">\
-                  <img src="../assets/img/logo.png" alt="Logo"></a>\
+                  <img src="../assets/img/logo_black.png" alt="Logo"></a>\
                   </li>\
                   <li><a href="../index.html">home</a></li>\
                   <!-- Dropdown Trigger -->\
@@ -36,7 +35,6 @@ document.write('\
                  <li><a href="../about.html#community-service">Community Service</a></li>\
                  <li><a href="photos.html">Photos</a></li>\
                  <li><a href="videos.html">Videos</a></li>\
-                 <li><a href="press.html">Press</a></li>\
                  <li><a href="../history.html">History</a></li>\
                  <li><a href="../contact.html">Contact</a></li>\
                  <li><a href="../support.html">Support</a></li>\
