@@ -167,6 +167,11 @@ nav {
   font-size: $title-size;
 }
 
+.section > .contained {
+  width: 75%;
+  margin: 0 auto;
+}
+
 .featured {
   .banner-full-width {
     background: linear-gradient(
