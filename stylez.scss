@@ -241,7 +241,7 @@ nav {
   }
 }
 
-.support, .contact {
+.press, .contact {
   .banner-full-width {
     background: linear-gradient(
       rgba(14,12,12,0.7),
@@ -337,6 +337,12 @@ footer {
   cursor: pointer;
 }
 
+.testing {
+  position: absolute;
+  height: 150px;
+  background-position: 50% 50%;
+  background: url('./assets/img/girl_power/girl_power_a.jpg') center no-repeat;
+}
 
 @media only screen and (min-width: 601px) {
   nav,

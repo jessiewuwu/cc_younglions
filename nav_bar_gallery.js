@@ -26,7 +26,7 @@ document.write('\
               <ul class="right hide-on-med-and-down regular-nav">\
                  <!-- Dropdown Trigger -->\
                  <li><a class="dropdown-button" href="#!" data-activates="gallery-dropdown">gallery<i class="material-icons right">arrow_drop_down</i></a></li>\
-                 <li><a href="../support.html">support</a></li>\
+                 <li><a href="../press.html">press</a></li>\
                  <li><a href="../contact.html">contact</a></li>\
               </ul>\
               <ul class="side-nav" id="mobile-demo">\
@@ -36,8 +36,8 @@ document.write('\
                  <li><a href="photos.html">Photos</a></li>\
                  <li><a href="videos.html">Videos</a></li>\
                  <li><a href="../history.html">History</a></li>\
+                 <li><a href="../press.html">press</a></li>\
                  <li><a href="../contact.html">Contact</a></li>\
-                 <li><a href="../support.html">Support</a></li>\
               </ul>\
           </div>\
       </nav>\
